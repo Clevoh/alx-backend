@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Flask app
+"""Flask app
 """
 from flask import Flask, render_template
 
@@ -8,9 +7,8 @@ app = Flask(__name__)
 
 
 @app.route('/')
-def greet() -> str:
-    """
-    Renders the 0-index.html template and returns it to the client.
+def greet():
+    """Welcome Holberton
     """
     return render_template('0-index.html')
 
